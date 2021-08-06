@@ -1,0 +1,150 @@
+businessobjects - com.epm.app.common
+CustLlenadoCuentas.class
+
+businessobjects - com.epm.app.custapp
+CustEpmWSService.class
+CustEpmWSServiceRemote.class
+
+businessobjects - com.epm.app.inventory
+CustMatUseTrans.class
+CustMatUseTransSet.class
+
+businessobjects - com.epm.app.labor
+CustLabTrans.class
+CustLabTransSet.class
+CustServRecTrans.class
+CustServRecTransSet.class
+
+businessobjects - com.epm.app.mr
+CustFldMRLineDirectReq.class
+CustFldMRLineItemnum.class
+CustFldMRLineLineType.class
+CustFldMRLineSlxContractNum.class
+CustFldMRLineStoreloc.class
+CustMRLine.class
+CustMRLineSet.class
+
+businessobjects - com.epm.app.plusdcuest
+CustPlusDEstControl.class
+CustPlusDEstControlSet.class
+
+businessobjects - com.epm.app.slxaltasbajas
+AltasBajas.class
+AltasBajasSet.class
+AltasBajasSetRemote.class
+FldDeltaLongitud.class
+
+businessobjects - com.epm.app.slxassetpr
+AssetPR.class
+AssetPRFldPurContractRefNum.class
+AssetPRSet.class
+AssetPRStatusHandler.class
+CustFldPlantaContrato.class
+CustFldPurContractRefNum.class
+CustFldSlxAlmacenable.class
+
+businessobjects - com.epm.app.slxassetpr.virtual
+AssetPRChangeStatus.class
+AssetPRChangeStatusSet.class
+
+businessobjects - com.epm.app.SlxSoliPagContDet
+CustSlxSoliPagContDet.class
+CustSlxSoliPagContDetSet.class
+
+businessobjects - com.epm.app.slxtrasloper
+CustFldContratoAlmacenable.class
+TraslOper.class
+TraslOperRemote.class
+TraslOperService.class
+TraslOperServiceRemote.class
+TraslOperSet.class
+TraslOperSetRemote.class
+
+businessobjects - com.epm.app.workorder
+CustEjecCont.class
+CustEjecContSet.class
+CustFldEjecContCommon.class
+CustFldPurContractRefNum.class
+CustFldWoUnidadNegocio.class
+CustFldWpMatDirectReq.class
+CustFldWpMatLocation.class
+CustFldWPMatSlxContractNum.class
+CustFldWPMatUnidadNegocio.class
+CustFldWpSerItemNum.class
+CustFldWPSrvSlxContractNum.class
+CustFldWPSrvUnidadNegocio.class
+CustPlusDWORemote.class
+CustPlusSFldWOAssetNum.class
+CustWO.class
+CustWOSet.class
+CustWPMaterial.class
+CustWPMaterialSet.class
+CustWPService.class
+CustWPServiceSet.class
+
+businessobjects - com.epm.app.workorder.virtual
+CustWOGrandTotal.class
+CustWOGrandTotalSet.class
+CustWOTotal.class
+CustWOTotalSet.class
+
+businessobjects - com.epm.iface
+AllowRecurrenceFilter.class
+EPMRulesExtExit.class
+FSMInvIssueExit.class
+GOTAltKeySetIn.class
+GOTChgStatusFilter.class
+GOTWOEMERSetIn.class
+ManageSyncIntSetIn.class
+ManageSyncIntSetOut_aux.class
+ManageSyncIntUserExit.class
+ReturnExternalRefIdExit.class
+
+businessobjects - com.epm.iface.activofijo
+AllowRecurrenceFilter.class
+AltasFindAssetSetIn.class
+
+businessobjects - com.epm.iface.app.slxaltasbajas
+AltasBajasResultSetIn.class
+AltasFindAssetSetIn.class
+
+businessobjects - com.epm.iface.app.workorder
+ChangeStatusSetIn.class
+
+businessobjects - com.epm.iface.gis
+GISAssetAltKeySetIn_distrbcn.class
+GISAssetProcess.class
+GISAssetProcess_edit.class
+GISAssetUserExit.class
+GISAssetUserExit_distrbcn.class
+GISLocationProcess.class
+GISLocationUserExit.class
+GISLocationUserExit_distrbcn.class
+
+businessobjects - com.epm.util
+IntScadaCron$DeployedMeterNotFoundException.class
+IntScadaCron$Reading.class
+IntScadaCron$ReadingLevel.class
+IntScadaCron.class
+SLXUpdateAssetDescription.class
+
+webclient - com.epm.webclient.beans.assetcat
+SlxAssetCatAppBean.class
+
+webclient - com.epm.webclient.beans.slxaltasbajas
+AltasBajasAppBean.class
+
+webclient - com.epm.webclient.beans.slxassetpr
+AssetPRAppBean.class
+AssetPRLinesBean.class
+CustChangeStatusBean.class
+SelectAssetsBean.class
+
+webclient - com.epm.webclient.beans.SlxSoliPagCont
+CustSlxSoliPagContAppBean.class
+
+webclient - com.epm.webclient.beans.slxtrasloper
+TrasladoOperarAppBean.class
+
+webclient - com.epm.webclient.beans.workorder
+SlxDespacharABean.class

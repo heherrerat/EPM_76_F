@@ -1,0 +1,129 @@
+********************************************************
+clases de objetos y atribuitos
+********************************************************
+Package com.epm.app.common
+CustLlenadoCuentas.java: Metodos getWo, setCuentasPlan y setCuentasReal 
+
+Package com.epm.app.custapp
+CustEpmWSService.java: Metodos informarRecepcionActivos y reportDowntime
+CustEpmWSServiceRemote.java: Metodos informarRecepcionActivos y reportDowntime 
+
+Package com.epm.app.inventory 
+CustMatUseTrans.java: Metodos add y boEsMaterialPlanificado
+CustMatUseTransSet.java: Metodos: getMboInstance
+
+Package com.epm.app.labor
+CustLabTrans.java: Metodos add y getWOot
+CustLabTransSet.java: Metodos getMboInstance
+CustServRecTrans.java: Metodos add, boEsServicioPlanificado y getWOot
+CustServRecTransSet.java: Metodos getMboInstance
+
+Package com.epm.app.mr
+CustFldMRLineLineType.java: Metodos action
+CustFldMRLineSlxContractNum.java: Metodos action
+CustFldMRLineStoreloc.java: Metodos action
+CustMRLine.java: Metodos add y voManejoCuentas
+CustMRLineSet.java: Metodos getMboInstance
+
+Package com.epm.app.plusdcuest
+CustPlusDEstControl.java: Metodos save
+CustPlusDEstControlSet.java: Metodos getMboInstance
+
+Package com.epm.app.slxaltasbajas
+AltasBajas.java: Metodos add, appValidate y initFieldFlagsOnMbo
+AltasBajasSet.java: Metodos getMboInstance, enviarAltasBajasJDEdwards_old y enviarJDEdwards
+AltasBajasSetRemote.java: Metodos enviarJDEdwards
+FldDeltaLongitud.java: Metodos action y validate
+
+Package com.epm.app.slxassetpr
+AssetPR.java: Metodos duplicate, getStatusHandler, getStatusHistory, getStatusListName, init, setContractFlags y skipCopyField
+AssetPRSet.java: Metodos getMboInstance
+AssetPRStatusHandler.java: Metodos changeStatus y checkStatusChangeAuthorization
+CustFldPurContractRefNum.java: Metodos action, clearFields, getList, getListWhere y getWhere
+CustFldSlxAlmacenable.java: Metodos action
+
+Package com.epm.app.slxassetpr\virtual
+AssetPRChangeStatus.java: Metodos 
+AssetPRChangeStatusSet.java: Metodos changeMboStatus, getMboInstance y getMboIntoSet 
+
+Package com.epm.app.SlxSoliPagContDet
+CustSlxSoliPagContDet.java: Metodos add y undelete
+CustSlxSoliPagContDetSet.java: Metodos getMboInstance
+
+Package com.epm.app.slxtrasloper
+CustFldContratoAlmacenable.java: Metodos initValue
+TraslOper.java: Metodos add, init y is5_1
+TraslOperRemote.java: Metodos is5_1
+TraslOperService.java: Metodos TraslOperService, addMbosToSet, addMboToSet, enviarJDEdwards, resultadoTrasladoOperar y trasladarOperarManual
+TraslOperServiceRemote.java: Metodos enviarJDEdwards, resultadoTrasladoOperar y trasladarOperarManual
+TraslOperSet.java: Metodos borrarEnviados, borrarEnviados, calcularPctjeDistrib, createRecord, createRecord, createRecords, enviarJDEdwards, getMboInstance, marcarActivosTrasladoOperar y validarParaEnvio
+TraslOperSetRemote.java: Metodos borrarEnviados, createRecord, createRecords, enviarJDEdwards, marcarActivosTrasladoOperar y setSourceWoViewSet
+
+Package com.epm.app.workorder
+CustFldPurContractRefNum.java: Metodos action, clearFields, getContract, getContractAuth, getList y validate
+CustFldWoUnidadNegocio.java: Metodos action y voProcesaCambiosUnidadNegocio
+CustFldWpMatDirectReq.java: Metodos action 
+CustFldWpMatLocation.java: Metodos action
+CustFldWPMatSlxContractNum.java: Metodos action
+CustFldWPMatUnidadNegocio.java: Metodos action
+CustFldWPSrvSlxContractNum.java: Metodos action
+CustFldWPSrvUnidadNegocio.java: Metodos ation
+CustWPMaterial.java: Metodos add
+CustWPMaterialSet.java: Metodos getMboInstance
+CustWPService.java: Metodos add y appValidate
+CustWPServiceSet.java: Metodos getMboInstance
+
+
+********************************************************
+clases de interfaces
+********************************************************
+Package com.epm.iface.iface
+EPMRulesExtExit.java: Metodos mapDataIn, mapDataOut, convertirCodigos, convertirCodigos_recur, getFieldInfoArray, quitarTextoEnriquecido, reemplazarAlmacenFSM
+FSMInvIssueExit.java: Metodos setUserValueIn
+GOTAltKeySetIn.java: Metodos getKeyArray_old, checkValidateErrors
+ManageSyncIntSetIn.java: Metodos ManageSyncIntSetIn, addMbo, presetMboRules, 
+ManageSyncIntSetOut_aux.java: Metodos checkBusinessRules
+ManageSyncIntUserExit.java: Metodos setUserValueOut, addDoctypesWO_recur
+ReturnExternalRefIdExit.java: Metodos setUserValueOut
+
+Package com.epm.iface.iface\activofijo
+AllowRecurrenceFilter.java: Metodos stopRecurrence
+AltasFindAssetSetIn.java: Metodos presetMboRules
+
+Package com.epm.iface.iface\app\slxaltasbajas
+AltasFindAssetSetIn.java: Metodos presetMboRules
+
+Package com.epm.iface.iface\app\workorder
+ChangeStatusSetIn.java: Metodos afterProcess
+
+Package com.epm.iface.iface\gis
+GISAssetAltKeySetIn_distrbcn.java: Metodos getKeyArray
+GISAssetProcess.java: Metodos getKeyArray, presetMboRules, checkValidateErrors, callMboExit
+GISAssetUserExit_distrbcn.java: Metodos setUserValueIn, merge, createRulesMap
+GISLocationProcess.java: Metodos presetMboRules, callMboExit
+
+Package com.epm.iface.util
+IntScadaCron.java: Metodos cronAction, isTimeElapsed, createReading, importReading, queryMboSet, getNonNullParamAsString, getNonNullParamAsInt, getParameters, newParam,isNullOrEmpty, getReadingLevel(Reading reading), getReadingLevel(double readingValue)
+  clase Reading: Metodos Reading(ResultSet rs), Reading(MboRemote mbo)
+  clase DeployedMeterNotFoundException: Metodos DeployedMeterNotFoundException
+IntScadaCronRespaldo.java: Metodos cronAction, isTimeElapsed, createReading, importReading, queryMboSet, getNonNullParamAsString, getNonNullParamAsInt, getParameters, newParam, isNullOrEmpty, getReadingLevel(Reading reading), getReadingLevel(double readingValue)
+  clase Reading: Metodos Reading(ResultSet rs), Reading(MboRemote mbo)
+  clase DeployedMeterNotFoundException: Metodos DeployedMeterNotFoundException
+
+
+********************************************************
+Clases en xml (beans)
+********************************************************
+Package com.epm.webclient.beans.slxaltasbajas
+AltasBajasAppBean.java: Metodos enviarjde, 
+
+Package com.epm.webclient.beans.slxassetpr
+AssetPRAppBean.java: Metodos deleteall, deleteslctd
+CustChangeStatusBean.java: Metodos execute
+SelectAssetsBean.java: Metodos execute, addAssets
+
+Package com.epm.webclient.beans.SlxSoliPagCont
+CustSlxSoliPagContAppBean.java: Metodos initialize, execute
+
+Package com.epm.webclient.beans.slxtrasloper
+TrasladoOperarAppBean.java: Metodos trasloper
